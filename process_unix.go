@@ -29,6 +29,10 @@ func (p *UnixProcess) PPid() int {
 	return p.ppid
 }
 
+func (p *UnixProcess) PGid() int {
+	return p.pgrp
+}
+
 func (p *UnixProcess) Executable() string {
 	return p.binary
 }
